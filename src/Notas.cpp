@@ -772,7 +772,8 @@ note("Sol5", 300);
 note("Mi5", 300);
 note("Do5", 300);
 note("Re5", 300);
-note( Si4", 450);
+note("Si4", 450);
 note("SILENCE", 1000); // Pausa larga al final
 }
+
 
