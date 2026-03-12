@@ -750,28 +750,29 @@ void Notas::sound_Conquest_of_Paradise() {
 }
 
 void Notas::sound_Super_Mario() {
-tone(14, Mi5, 150);
-tone(14, Mi5, 300);
-tone(14, Mi5, 300);
-tone(14, Do5, 150);
-tone(14, Mi5, 300);
-tone(14, Sol5, 600);
-tone(14, Sol4, 600);
-tone(14, Do5, 450);
-tone(14, Sol4, 450);
-tone(14, Mi4, 450);
-tone(14, La4, 300);
-tone(14, Si4, 300);
-tone(14, La4, 150);
-tone(14, Sol4, 300);
-tone(14, Mi5, 300);
-tone(14, Sol5, 300);
-tone(14, La5, 300);
-tone(14, Fa5, 150);
-tone(14, Sol5, 300);
-tone(14, Mi5, 300);
-tone(14, Do5, 300);
-tone(14, Re5, 300);
-tone(14, Si4, 450);
- note("SILENCE", 1000); // Pausa larga al final
+note("Mi5", 150);
+note("Mi5", 300);
+note("Mi5", 300);
+note("Do5", 150);
+note("Mi5", 300);
+note("Sol5", 600);
+note("Sol4", 600);
+note("Do5", 450);
+note("Sol4", 450);
+note("Mi4", 450);
+note("La4", 300);
+note("Si4", 300);
+note("La4", 150);
+note("Sol4", 300);
+note("Mi5", 300);
+note("Sol5", 300);
+note("La5", 300);
+note("Fa5", 150);
+note("Sol5", 300);
+note("Mi5", 300);
+note("Do5", 300);
+note("Re5", 300);
+note( Si4", 450);
+note("SILENCE", 1000); // Pausa larga al final
 }
+
