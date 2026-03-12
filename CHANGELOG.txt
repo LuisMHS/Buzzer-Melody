@@ -1,8 +1,12 @@
+Melody 0.0.4 - 2026-03-12
+* Se modifico el método note y se agrego mas sonidos musicales
+
 Melody 0.0.3 - 2025-04-22
 * Se estructura  la librería
 
 Melody 0.0.2 - 2024-03-08 
-* Se agrego más sonidos Musicales
+* Se agrego más sonidos musicales
 
 Melody 0.0.1 - 2024-01-05
+
 * Se desarollo la librería
