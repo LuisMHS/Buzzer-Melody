@@ -194,7 +194,9 @@ class Notas {
 	void sound_Love();
 	void sound_Happ();
 	void sound_Conquest_of_Paradise();
+    void sound_Super_Mario(); 
 };
 
 #endif
+
 
