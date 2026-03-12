@@ -25,11 +25,20 @@
    @date: 2024-01-05
    Actualizacion:
    Se agrego más sonidos Musicales
+   ********************
    -Milagros de la Cruz Quispe
    Arduino: 2.3.2
    @version: 0.0.1
    @date: 2024-03-08
-	
+   ********************
+   @Author: Luis Miguel Hernández Samaniego
+   @Arduino: 2.3.8
+   @Version ESP32: 3.1.1
+   @Fecha: 12/03/2026 
+   @Placa: ESP32 WROOM genérico
+   @Version código:0.0.3
+   Se modificó el método note y se agregaron más sonidos musicales.
+   ********************
 */
 
 #include "Notas.h"
@@ -43,7 +52,7 @@ void Notas::begin() {
 }
 
 void Notas::note(String note_m, unsigned int duration) {
-  if(Get_Frequency(note_m)>0){
+  /*if(Get_Frequency(note_m)>0){
 	  float Th = (1000000 / Get_Frequency(note_m)) / 2;
   unsigned long tp = millis();
   while ((millis() - tp) <= duration) {
@@ -58,7 +67,8 @@ void Notas::note(String note_m, unsigned int duration) {
 	  delay(duration);
   }
   
-
+*/
+tone(_pin,Get_Frequency(note_m), duration);
 }
 
 float Notas::Get_Frequency(String note_m) {
@@ -359,62 +369,33 @@ void Notas::sound_Christmas_Music() {
 }
 void Notas::sound_Star_Wars() {
 	
-  // Generar la melodía principal de Star Wars
-  note("Sol", 500);
-  note("Sol", 500);
-  note("Re5", 500);
-  note("Si", 375);
-  note("Sol5", 125);
-  note("Fa5", 500);
-  note("Mi5", 500);
-  
-  note("Re6", 500);
-  note("Si5", 375);
-  note("Sol5", 125);
-  note("Fa5", 500);
-  note("Mi5", 500);
-  
-  note("Re6", 500);
-  note("Si5", 375);
-  note("Sol5", 125);
-  note("Fa5", 500);
-  note("Mi5", 500);
-  
-  note("Fa5", 250);
-  note("Re5", 250);
-  note("Mi5", 500);
-  note("Do5", 375);
-  note("Si", 125);
-  note("La", 500);
-  note("Sol", 500);
-  
-  note("Sol5", 500);
-  note("Fa5", 375);
-  note("Mi5", 125);
-  note("Re5", 500);
-  note("Do5", 500);
-  
-  note("Si", 375);
-  note("La", 125);
-  note("Sol", 500);
-  note("Do5", 375);
-  note("Si", 125);
-  note("La", 500);
-  
-  note("Sol5", 500);
-  note("Fa5", 375);
-  note("Mi5", 125);
-  note("Re5", 500);
-  note("Do5", 500);
-  
-  note("Si", 375);
-  note("La", 125);
-  note("Sol", 500);
-  note("Do5", 375);
-  note("Si", 125);
-  note("La", 500);
-  
-  note("SILENCE", 2000);  
+note("La4", 500);
+note("La4", 500);
+note("La4", 500);
+
+note("Fa4", 350);
+note("Do5", 150);
+
+note("La4", 500);
+note("a4", 350);
+note("Do5", 150);
+
+note("La4", 1000);
+
+
+note("Mi5", 500);
+note("Mi5", 500);
+note("Mi5", 500);
+
+note("Fa5", 350);
+note("Do5", 150);
+
+note("Sol4", 500);
+note("Fa4", 350);
+note("Do5", 150);
+
+note("La4", 1000);
+note("SILENCE", 2000);  
   //-------------------------------------------------//
 	
 }
@@ -766,4 +747,31 @@ void Notas::sound_Conquest_of_Paradise() {
   note("Mi5", 500);
   note("Do5", 500);
   note("SILENCE", 100); // Pausa larga al final
+}
+
+void Notas::sound_Super_Mario() {
+tone(14, Mi5, 150);
+tone(14, Mi5, 300);
+tone(14, Mi5, 300);
+tone(14, Do5, 150);
+tone(14, Mi5, 300);
+tone(14, Sol5, 600);
+tone(14, Sol4, 600);
+tone(14, Do5, 450);
+tone(14, Sol4, 450);
+tone(14, Mi4, 450);
+tone(14, La4, 300);
+tone(14, Si4, 300);
+tone(14, La4, 150);
+tone(14, Sol4, 300);
+tone(14, Mi5, 300);
+tone(14, Sol5, 300);
+tone(14, La5, 300);
+tone(14, Fa5, 150);
+tone(14, Sol5, 300);
+tone(14, Mi5, 300);
+tone(14, Do5, 300);
+tone(14, Re5, 300);
+tone(14, Si4, 450);
+ note("SILENCE", 1000); // Pausa larga al final
 }
